@@ -3,5 +3,5 @@ docker run --rm \
   --volume="$PWD:/srv/jekyll:Z" \
   -p 0.0.0.0:4000:4000 \
   -it jvconseil/jekyll-docker:$JEKYLL_VERSION \
-  jekyll serve --livereload --watch
+  jekyll serve --livereload --watch --force-polling
 
